@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AbhiCaliMoves</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        header { padding: 8vh 5vw; }
+
+        .logo {
+            width: 80%;
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        #fallbackText {
+            display: none;
+            font-size: clamp(32px, 6vw, 60px);
+            font-weight: bold;
+        }
+
+        h2 { font-size: clamp(24px, 5vw, 36px); }
+
+        p {
+            font-size: clamp(16px, 4vw, 20px);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        section { padding: 8vh 5vw; }
+
+        .social-links { margin-top: 20px; }
+
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            border: 1px solid white;
+            border-radius: 30px;
+            text-decoration: none;
+            color: white;
+            font-size: clamp(14px, 3.5vw, 18px);
+            transition: 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Skills Section */
+        .skill-btn {
+            width: 100%;
+            max-width: 500px;
+            margin: 10px auto;
+            padding: 15px;
+            background: black;
+            color: white;
+            border: 1px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .skill-content {
+            display: none;
+            max-width: 500px;
+            margin: 0 auto 10px auto;
+            text-align: left;
+            padding: 10px 20px;
+        }
+
+        .skill-content ul {
+            padding-left: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="Abhicalimoves.jpg" alt="AbhiCaliMoves Logo" class="logo" id="logoImage">
+    <h1 id="fallbackText">AbhiCaliMoves</h1>
+    <p>Begin your calisthenics journey today. Don’t waste time. let’s discover the smartest and fastest ways to master every skill together.</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>I’m Chander Prakash, the creator of AbhiCaliMoves.
+I train every morning combining gym, yoga, and calisthenics to master full body control.
+I believe in discipline over motivation and progress over excuses.
+My mission is to inspire others to build strength, balance, and control through consistent practice.</p>
+</section>
+
+<section>
+    <h2 onclick="toggleSection('skillsMain')" style="cursor:pointer;">
+        Calisthenics Skills ▼
+    </h2>
+
+    <div id="skillsMain" style="display:none;">
+
+        <button class="skill-btn" onclick="toggleSection('muscleup')">Muscle-Up</button>
+        <div class="skill-content" id="muscleup">
+            <ul>
+                <li>Master Pull-Ups (10-12 clean reps)</li>
+                <li>Practice Explosive Pull-Ups</li>
+                <li>Train Chest-to-Bar Pulls</li>
+                <li>Learn Transition Phase</li>
+                <li>Combine Pull + Dip Smoothly</li>
+            </ul>
+        </div>
+
+        <button class="skill-btn" onclick="toggleSection('planche')">Planche</button>
+        <div class="skill-content" id="planche">
+            <ul>
+                <li>Start with Planche Leans</li>
+                <li>Tuck Planche Hold</li>
+                <li>Advanced Tuck Planche</li>
+                <li>Straddle Planche</li>
+                <li>Full Planche Hold</li>
+            </ul>
+        </div>
+
+        <button class="skill-btn" onclick="toggleSection('handstand')">Handstand</button>
+        <div class="skill-content" id="handstand">
+            <ul>
+                <li>Wall Support Hold</li>
+                <li>Shoulder Taps</li>
+                <li>Freestanding Kick-ups</li>
+                <li>Balance Practice</li>
+                <li>Controlled Hold 30+ Seconds</li>
+            </ul>
+        </div>
+
+        <button class="skill-btn" onclick="toggleSection('frontlever')">Front Lever</button>
+        <div class="skill-content" id="frontlever">
+            <ul>
+                <li>Tuck Front Lever</li>
+                <li>Advanced Tuck</li>
+                <li>One Leg Front Lever</li>
+                <li>Straddle Front Lever</li>
+                <li>Full Front Lever Hold</li>
+            </ul>
+        </div>
+
+        <button class="skill-btn" onclick="toggleSection('backlever')">Back Lever</button>
+        <div class="skill-content" id="backlever">
+            <ul>
+                <li>Skin The Cat</li>
+                <li>Tuck Back Lever</li>
+                <li>Advanced Tuck</li>
+                <li>Straddle Back Lever</li>
+                <li>Full Back Lever Hold</li>
+            </ul>
+        </div>
+
+        <button class="skill-btn" onclick="toggleSection('humanflag')">Human Flag</button>
+        <div class="skill-content" id="humanflag">
+            <ul>
+                <li>Vertical Flag Hold</li>
+                <li>Tuck Flag</li>
+                <li>Straddle Flag</li>
+                <li>Core Strength Training</li>
+                <li>Full Human Flag Hold</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Connect With Me</h2>
+    <div class="social-links">
+        <a href="https://youtube.com/@abhicalimoves" target="_blank">YouTube</a>
+        <a href="https://facebook.com/abhicalimoves" target="_blank">Facebook</a>
+        <a href="https://instagram.com/abhicalimoves" target="_blank">Instagram</a>
+    </div>
+</section>
+
+<section>
+    <h2>Have a Question?</h2>
+
+    <form id="contactForm" style="max-width:600px; margin:0 auto;">
+        <input type="text" id="name" placeholder="Name*" required
+        style="width:100%; padding:15px; margin:10px 0; border:none; border-radius:8px;">
+
+        <textarea id="message" placeholder="Message*" required
+        style="width:100%; padding:15px; margin:10px 0; border:none; border-radius:8px; min-height:120px;"></textarea>
+
+        <button type="submit"
+        style="padding:12px 30px; border:1px solid white; background:black; color:white; border-radius:30px; cursor:pointer;">
+            SUBMIT
+        </button>
+    </form>
+</section>
+
+<script>
+    function toggleSection(id) {
+        var x = document.getElementById(id);
+        if (x.style.display === "none" || x.style.display === "") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        var name = document.getElementById("name").value; // Added name input value
+        var message = document.getElementById("message").value;
+        
+        // Subject dynamic change to: "I'm [Name] and I have a query."
+        var newSubject = "I'm " + name + " and I have a query.";
+        
+        window.location.href =
+            "mailto:abhicalimoves@gmail.com?subject=" + encodeURIComponent(newSubject) + 
+            "&body=" + encodeURIComponent(message);
+    });
+</script>
+
+<footer style="padding:20px; border-top:1px solid white; margin-top:40px; font-size:14px; opacity:0.7;">
+    © <span id="year"></span> AbhiCaliMoves. All Rights Reserved.
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
